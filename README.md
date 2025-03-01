@@ -2,8 +2,9 @@
 
 A live, browser-based code editor inspired by CodePen. Write, preview, and edit HTML, CSS, and JavaScript code in real time with an integrated preview pane. Built using React.js and designed for simplicity and responsiveness.
 
+### Demo
 ![image alt](https://github.com/VAMSHIVKG/Interactive-code-editor/blob/7adcde2e888ece887d38e1ac7d01b05f544e8181/src/demo1.png)
-![image alt]()
+![image alt](https://github.com/VAMSHIVKG/Interactive-code-editor/blob/9a83790fa395e20fb582e0952477551de1dc535a/src/demo2.png)
 
 ## Features ✨
 
