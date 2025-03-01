@@ -1,0 +1,131 @@
+/* App.css */
+:root {
+  --primary-color: #282a36;
+  --secondary-color: #44475a;
+  --accent-html: #ff5555;
+  --accent-css: #3434b9;
+  --accent-js: #a3142c;
+  --text-color: #f8f8f2;
+  --border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--primary-color);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.controls {
+  padding: 1rem;
+  background: var(--secondary-color);
+  border-bottom: 2px solid #6272a4;
+}
+
+.font-control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-color);
+}
+
+select {
+  padding: 0.3rem;
+  border-radius: 4px;
+  background: var(--primary-color);
+  color: var(--text-color);
+  border: 1px solid #6272a4;
+}
+
+.editor-container {
+  display: flex;
+  flex: 1;
+  background: var(--primary-color);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.editor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--secondary-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  border: 2px solid;
+  transition: border-color 0.3s ease;
+}
+
+.editor:hover {
+  border-color: #6272a4;
+}
+
+.editor-header {
+  padding: 1rem;
+  color: var(--text-color);
+  border-bottom: 2px solid;
+}
+
+.html-header {
+  border-color: var(--accent-html);
+  background: linear-gradient(to right, var(--accent-html) 20%, transparent);
+}
+
+.css-header {
+  border-color: var(--accent-css);
+  background: linear-gradient(to right, var(--accent-css) 20%, transparent);
+}
+
+.js-header {
+  border-color: var(--accent-js);
+  background: linear-gradient(to right, var(--accent-js) 20%, transparent);
+}
+
+textarea {
+  flex: 1;
+  background: var(--primary-color);
+  border: none;
+  resize: none;
+  padding: 1rem;
+  color: var(--text-color);
+  font-family: 'Fira Code', 'Consolas', monospace;
+  line-height: 1.5;
+  tab-size: 4;
+  outline: none;
+}
+
+textarea:focus {
+  box-shadow: inset 0 0 0 2px #6272a4;
+}
+
+.preview {
+  flex: 1;
+  background: white;
+  border-top: 2px solid #6272a4;
+}
+
+.preview-header {
+  padding: 1rem;
+  background: var(--secondary-color);
+  color: var(--text-color);
+  border-bottom: 2px solid #6272a4;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Add these to your index.html head for code font */
+/* <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"> */
